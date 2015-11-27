@@ -1,0 +1,100 @@
+body {
+    background-color:#DEDEDE;
+    color:#121212;
+    font-family: "Century Schoolbook", "Century", "Times New Roman", serif;
+    text-align:center;
+    margin:0;
+}
+h1, h2, h3 {
+    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+}
+h1 {
+    font-size:1.25em;
+}
+h2 {
+    font-size:2em;
+    color:#555;
+    font-weight:normal;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    margin-top:2em;
+    margin-bottom:0em;
+}
+h3 {
+    margin-top:1em;
+    margin-bottom:.5em;
+    font-size:2em;
+    line-height:.75em;
+}
+h3 small {
+    font-size:.5em;
+    color:black;
+    font-style:italic;
+}
+p {
+    text-align:left;
+    margin-top:0px;    
+}
+a {
+    color:#333;
+    text-decoration:none;
+}
+a:hover {
+    color:#000;
+}
+
+/*about font color */
+.about {
+    color:#3968cc;
+}
+about:hover {
+    color:#2d53a3;
+}
+/* Creative font color */
+.creative {
+    color:#cc3968;
+}
+.creative:hover {
+    color:#a32d53;
+}
+/* coding font color */
+.coding {
+    color:#5db733;
+}
+.coding:hover {
+    color:#488e27;
+}
+/* contact font color */
+.contact {
+    color: #cc9d39 ;
+}
+.contact:hover {
+    color:#a37d2d
+}
+.header {
+    background-position: center;
+    margin-top:0;
+    width:100%;
+    padding-top:2em;
+    padding-bottom:2em;
+    background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+.content {
+    max-width:15cm;
+    margin:0 auto;
+}
+
+h1.name{
+    font-size:4em;
+}
+a.selected {
+    color:#222;
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+h1.main-links a{
+    margin:5px;
+}
