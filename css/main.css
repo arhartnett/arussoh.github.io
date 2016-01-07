@@ -43,6 +43,34 @@ a:hover {
     color:#000;
 }
 
+.button-container {
+    margin:0 auto;
+    margin-top:2em;
+}
+.button {
+    border-radius:8px;
+    width:4em;
+    padding:1.5em;
+    margin:.5em;
+    display:inline-block;
+    font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+    font-weight:bold;
+    cursor:pointer;
+    color:white;
+}
+.button-about {
+    background-color:#3968cc;
+}
+.button-about:hover {
+    background-color:#2d53a3;
+}
+.button-contact {
+    background-color:#cc9d39;
+}
+.button-contact:hover {
+    background-color:#a37d2d;
+}
+
 /*about font color */
 .about {
     color:#3968cc;
