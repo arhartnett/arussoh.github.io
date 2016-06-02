@@ -13,21 +13,33 @@
 
     </head>
     <body>    
-        <div class="header" style="background-image: url(img/header_blank.png);">
-            <a href="index.html"><h1 class="name" style="font-size:6em;color:white;">
+        <div class="header">
+            <a href="index.html">
+            <h1 class="name" id="name">
                 Andrew Hartnett
             </h1></a>
         </div>
-        <h1 class="main-links">
-            <a href="about.html" class="about">About</a>
-            <a href="creative.html" class="creative">Creative Projects</a>
-            <a href="coding.html" class="coding">Coding Projects</a>
-            <a href="contact.html" class="contact">Contact</a>
-        </h1>
-        <h2>Sophomore at Princeton University</h2>
         <div class="button-container">
-            <span class="button button-about" onclick="location.href='about.html'">Bio</span>
-            <span class="button button-contact" onclick="location.href='contact.html'">Contact</span>
+            <div class="button" id="about">
+                About
+            </div>
+            <div class="button" id="writing">
+                Writing
+            </div>
+            <div class="button" id="coding">
+                Coding
+            </div>
+            <div class="button" id="contact">
+                Contact
+            </div>
         </div>
+        <div class="content" id="content"></div>
     </body>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script type="text/babel" src="js/about.jsx"></script>
+    <script type="text/babel" src="js/writing.jsx"></script>
+    <script type="text/babel" src="js/coding.jsx"></script>
+    <script type="text/babel" src="js/contact.jsx"></script>
 </html>

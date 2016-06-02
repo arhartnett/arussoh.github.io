@@ -1,0 +1,99 @@
+@mono-font-stack: "Courier New", "Courier", monospace;
+@sans-font-stack: "Arial", "Helvetica", sans-serif;
+@gothic-font-stack: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+@base: #b2d8bb;
+@base-dark: darken(@base, 30%);
+@dark-gray: #111;
+
+
+body {
+    background-color:white;
+    color:@dark-gray;
+    font-family: @mono-font-stack;
+    text-align:center;
+    margin:0;
+}
+h1 {
+    font-size:4em;
+    &.name {
+        font-family: @mono-font-stack;
+        font-weight:bold;
+        color:@base-dark;
+        margin-bottom:.25em;
+        small {
+            font-size:25%;
+            color:@dark-gray;
+        }
+    }
+    &.main-links  {
+        font-family: @gothic-font-stack;
+    }
+}
+h2 {
+    font-family: @mono-font-stack;
+    font-size:2em;
+    color:#555;
+    font-weight:normal;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    margin-top:2em;
+    margin-bottom:0em;
+}
+h3 {
+    font-family: @gothic-font-stack;
+    margin-top:1em;
+    margin-bottom:.5em;
+    font-size:2em;
+    line-height:.75em;
+    color: @base;
+}
+h3 small {
+    font-size:.5em;
+    color:black;
+    font-style:italic;
+}
+p {
+    text-align:left;
+    margin-top:0px;
+    letter-spacing: -1px;
+}
+a {
+    color:@base-dark;
+    text-decoration:none;
+}
+a:hover {
+    color:@base;
+}
+
+.button-container {
+    margin:0 auto;
+    margin-bottom:1em;
+}
+.button {
+    border-radius:4px;
+    width:4em;
+    padding:.5em;
+    margin:.25em;
+    display:inline-block;
+    font-family: @mono-font-stack;
+    font-weight:bold;
+    cursor:pointer;
+    background:@base;
+    color: darken(@base, 50%);
+    &:hover {
+        background: darken(@base, 10%);
+    }
+}
+.content {
+    max-width:20cm;
+    margin:0 auto;
+}
+
+.bio {
+    min-height:235px; //match to height of headshot
+    position:relative;
+    margin:0 auto;
+    img.headshot {
+        float:right;
+    }
+}

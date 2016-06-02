@@ -1,29 +1,8 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Andrew Hartnett</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="css/main.css">
-        
-    </head>
-    <body>    
-        <div class="header" style="background-image: url(img/header_coding.jpg);">
-            <a href="index.html"><h1 class="name coding">
-                Andrew Hartnett
-            </h1></a>
-        </div>
-        <h1 class="main-links">
-            <a href="about.html" class="about">About</a>
-            <a href="creative.html" class="creative">Creative Projects</a>
-            <a href="coding.html" class="coding selected">Coding Projects</a>
-            <a href="contact.html" class="contact">Contact</a>
-        </h1>
-        <div class="content">
-            <h2>Webapps</h2>
+var Coding = React.createClass({
+    render: function() {
+        return (
+            <div>
+                <h2>Webapps</h2>
                 <h3>
                     <a href="https://www.kpasa.me" class="coding">KPasa</a><br />
                     <small>2014-2015</small>
@@ -44,7 +23,14 @@
                     <small>2014</small>
                 </h3>
                     <p>As a final project for my AP Calculus class, I worked in a team of three to develop a platformer game based around our year in the class. I coded (writing entirely JavaScript using the <a href="http://craftyjs.com/" class="coding">CraftyJS engine</a>), while my team members directed the game's art and general story.</p>
-                
-        </div>
-    </body>
-</html>
+            </div>
+        )
+    }
+});
+
+document.getElementById("coding").onclick = function(){
+    ReactDOM.render(
+        <Coding />,
+        document.getElementById("content")
+    );
+}
