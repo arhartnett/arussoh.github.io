@@ -3,8 +3,10 @@ body {
   background-color: white;
   color: #111111;
   font-family: "Courier New", "Courier", monospace;
-  text-align: center;
   margin: 0;
+}
+.header {
+  text-align: center;
 }
 h1 {
   font-size: 4em;
@@ -15,13 +17,6 @@ h1.name {
   color: #51a064;
   margin-bottom: .25em;
 }
-h1.name small {
-  font-size: 25%;
-  color: #111111;
-}
-h1.main-links {
-  font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
-}
 h2 {
   font-family: "Courier New", "Courier", monospace;
   font-size: 2em;
@@ -31,11 +26,13 @@ h2 {
   letter-spacing: 5px;
   margin-top: 2em;
   margin-bottom: 0em;
+  text-align: center;
 }
 h3 {
   font-family: "Century Gothic", "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", Futura, sans-serif;
   margin-top: 1em;
   margin-bottom: .5em;
+  text-align: center;
   font-size: 2em;
   line-height: .75em;
   color: #b2d8bb;
@@ -47,7 +44,7 @@ h3 small {
 }
 p {
   text-align: left;
-  margin-top: 0px;
+  margin: 3px;
   letter-spacing: -1px;
 }
 a {
@@ -60,6 +57,7 @@ a:hover {
 .button-container {
   margin: 0 auto;
   margin-bottom: 1em;
+  text-align: center;
 }
 .button {
   border-radius: 4px;
@@ -75,6 +73,9 @@ a:hover {
 }
 .button:hover {
   background: #90c79d;
+}
+.button.active {
+  background: #6eb67f;
 }
 .content {
   max-width: 20cm;

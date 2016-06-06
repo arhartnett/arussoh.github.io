@@ -33,4 +33,5 @@ document.getElementById("coding").onclick = function(){
         <Coding />,
         document.getElementById("content")
     );
+    changeActive('coding');
 }

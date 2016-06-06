@@ -30,19 +30,20 @@ var About = React.createClass({
     }
 });
 
-ReactDOM.render(
-    <About />,
-    document.getElementById('content')
-);
-document.getElementById("name").onclick = function(){
+var about = function() {
     ReactDOM.render(
         <About />,
-        document.getElementById("content")
+        document.getElementById('content')
     );
+    changeActive('about')
+}
+
+// Load about page as landing page
+about();
+// About
+document.getElementById("name").onclick = function(){
+    about();
 }
 document.getElementById("about").onclick = function(){
-    ReactDOM.render(
-        <About />,
-        document.getElementById("content")
-    );
+    about();
 }

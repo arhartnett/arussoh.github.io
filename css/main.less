@@ -10,9 +10,13 @@ body {
     background-color:white;
     color:@dark-gray;
     font-family: @mono-font-stack;
-    text-align:center;
     margin:0;
 }
+
+.header {
+    text-align: center;
+}
+
 h1 {
     font-size:4em;
     &.name {
@@ -20,13 +24,6 @@ h1 {
         font-weight:bold;
         color:@base-dark;
         margin-bottom:.25em;
-        small {
-            font-size:25%;
-            color:@dark-gray;
-        }
-    }
-    &.main-links  {
-        font-family: @gothic-font-stack;
     }
 }
 h2 {
@@ -38,11 +35,13 @@ h2 {
     letter-spacing:5px;
     margin-top:2em;
     margin-bottom:0em;
+    text-align: center;
 }
 h3 {
     font-family: @gothic-font-stack;
     margin-top:1em;
     margin-bottom:.5em;
+    text-align: center;
     font-size:2em;
     line-height:.75em;
     color: @base;
@@ -54,7 +53,7 @@ h3 small {
 }
 p {
     text-align:left;
-    margin-top:0px;
+    margin:3px;
     letter-spacing: -1px;
 }
 a {
@@ -68,6 +67,7 @@ a:hover {
 .button-container {
     margin:0 auto;
     margin-bottom:1em;
+    text-align: center;
 }
 .button {
     border-radius:4px;
@@ -82,6 +82,9 @@ a:hover {
     color: darken(@base, 50%);
     &:hover {
         background: darken(@base, 10%);
+    }
+    &.active {
+        background: darken(@base, 20%);
     }
 }
 .content {

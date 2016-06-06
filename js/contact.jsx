@@ -18,4 +18,5 @@ document.getElementById("contact").onclick = function(){
         <Contact />,
         document.getElementById("content")
     );
+    changeActive('contact');
 }

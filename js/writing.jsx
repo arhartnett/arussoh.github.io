@@ -35,4 +35,5 @@ document.getElementById("writing").onclick = function(){
         <Writing />,
         document.getElementById("content")
     );
+    changeActive('writing');
 }
