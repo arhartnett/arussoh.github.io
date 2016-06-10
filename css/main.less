@@ -2,10 +2,12 @@
 @mono-font-stack: "Courier New", "Courier", monospace;
 @sans-font-stack: "Arial", "Helvetica", sans-serif;
 @gothic-font-stack: "Century Gothic","Apple Gothic",Futura,sans-serif;
-@base: #b2d8bb;
-@base-dark: darken(@base, 30%);
+@base-light: #b2d8bb;
+@base: darken(@base-light, 30%);
 @dark-gray: #111;
 @mid-gray: #555;
+@text: @dark-gray;
+@white: white;
 
 body {
   background-color:white;
@@ -13,11 +15,6 @@ body {
   font-family: @mono-font-stack;
   margin:0;
 }
-
-.header {
-  text-align: center;
-}
-
 h1 {
   font-family: @mono-font-stack;
   font-size:2em;
@@ -57,7 +54,7 @@ p {
   letter-spacing: -1px;
 }
 a {
-  color:@base-dark;
+  color:@base;
   text-decoration:none;
 }
 a:hover {
@@ -69,40 +66,99 @@ em {
   font-style: normal;
 }
 
-.name {
-  font-size: 4em;
-  font-family: @mono-font-stack;
-  font-weight:bold;
-  color:@base-dark;
-  margin-bottom:.25em;
+.header {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background: @base;
+  color: white;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  .header-content {
+    margin: auto auto;
+    .name {
+      font-size: 5em;
+    }
+    @button-size:5em;
+    .button-container {
+      margin:2em auto;
+      margin-bottom:1em;
+      .button {
+        border-radius:4em;
+        width:@button-size;
+        height:@button-size;
+        margin:.25em;
+        display:inline-block;
+        line-height:100%;
+        vertical-align: middle;
+        text-align: center;
+        cursor:pointer;
+        font-family: @mono-font-stack;
+        font-weight:bold;
+        background:white;
+        color: @dark-gray;
+        &:hover {
+            background: @base-light;
+        }
+        span {
+          line-height:@button-size;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
 }
 
-.button-container {
-  margin:0 auto;
-  margin-bottom:1em;
-  text-align: center;
-}
-.button {
-  border-radius:4px;
-  width:4em;
-  padding:.5em;
-  margin:.25em;
-  display:inline-block;
-  font-family: @mono-font-stack;
-  font-weight:bold;
-  cursor:pointer;
+.navbar {
+  @navbar-height: 4em;
+  width:100%;
+  height:@navbar-height;
   background:@base;
-  color: darken(@base, 50%);
-  &:hover {
-      background: darken(@base, 10%);
+  color:white;
+  text-align: center;
+  &.fixed {
+    position: fixed;
+    top: 0;
   }
-  &.active {
-      background: darken(@base, 20%);
+  .button-container {
+    margin: 0 auto;
+    width: auto;
+    .button {
+      line-height: @navbar-height;
+      height: 100%;
+      display: inline-block;
+      color: white;
+      font-family:@gothic-font-stack;
+      font-weight: bold;
+      padding-left: .25em;
+      padding-right: .25em;
+      &.active {
+          background: white;
+          color: @base;
+      }
+    }
   }
 }
 .content {
-  max-width:20cm;
   margin:0 auto;
+  .section {
+    display:block;
+    width:100%;
+    &.white {
+      background:@white;
+    }
+    &.green{
+      background:@base-light;
+    }
+    div {
+      max-width: 20cm;
+      margin: 0 auto;
+      padding: .5em;
+    }
+  }
 }
 .bio {
   min-height:235px; //match to height of headshot

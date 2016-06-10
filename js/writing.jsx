@@ -8,7 +8,6 @@ var Writing = React.createClass({
         </h2>
         <p>
           How it Happens is an educational YouTube series.
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Acri0U3TAE8" frameborder="0" allowfullscreen></iframe>
         </p>
         <h2>
           <a href="http://www.triangleshow.com/" class="creative">Princeton Triangle Club</a><br />
@@ -16,7 +15,6 @@ var Writing = React.createClass({
         </h2>
         <p>
           I am a writer for the Princeton Triangle Club, a sketch musical comedy group. I have thus far been involved with the 2015 spring sketch show, A Wrinkle Intime, and the main stage fall 2015 show, Tropic Blunder.
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/mp6Nwtc4fyc?list=PLD0Xl55ohYOrQP8BoKt8v1NmOtL-Dpa23" frameborder="0" allowfullscreen></iframe>
         </p>
         <h2>
           <a href="writing/alegion.html" class="creative">American Legion Oratorical Contest</a><br />
@@ -30,10 +28,10 @@ var Writing = React.createClass({
   }
 });
 
-document.getElementById("writing").onclick = function(){
+var writing = function() {
   ReactDOM.render(
     <Writing />,
-    document.getElementById("content")
+    document.getElementById("writing")
   );
-  changeActive('writing');
 }
+writing();

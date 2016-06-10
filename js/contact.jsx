@@ -11,10 +11,10 @@ var Contact = React.createClass({
   }
 });
 
-document.getElementById("contact").onclick = function(){
+var contact = function() {
   ReactDOM.render(
     <Contact />,
-    document.getElementById("content")
+    document.getElementById("contact")
   );
-  changeActive('contact');
 }
+contact();

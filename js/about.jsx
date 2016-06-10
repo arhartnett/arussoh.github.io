@@ -43,17 +43,8 @@ var About = React.createClass({
 var about = function() {
   ReactDOM.render(
     <About />,
-    document.getElementById('content')
+    document.getElementById('about')
   );
   changeActive('about')
 }
-
-// Load about page as landing page
 about();
-// About
-document.getElementById("name").onclick = function(){
-  about();
-}
-document.getElementById("about").onclick = function(){
-  about();
-}

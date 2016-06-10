@@ -11,27 +11,33 @@
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <div class="header">
-      <div class="name" id="name">
-        Andrew Hartnett
+    <div class="header" id="header">
+      <div class="header-content">
+        <div class="name" id="name">Andrew Hartnett</div>
+        <div class="button-container">
+          <a class="button" href="#about"><span>About</span></a>
+          <a class="button" href="#coding"><span>Coding</span></a>
+          <a class="button" href="#writing"><span>Writing</span></a>
+          <a class="button" href="#contact"><span>Contact</span></a>
+        </div>
       </div>
     </div>
-    <div class="button-container">
-      <div class="button" id="about">
-        About
-      </div>
-      <div class="button" id="writing">
-        Writing
-      </div>
-      <div class="button" id="coding">
-        Coding
-      </div>
-      <div class="button" id="contact">
-        Contact
+    <div class="navbar" id="navbar">
+      <div class="button-container">
+        <a class="button" id="n_about"  href="#about"><span>About</span></a>
+        <a class="button" id="n_coding"  href="#coding"><span>Coding</span></a>
+        <a class="button" id="n_writing" href="#writing"><span>Writing</span></a>
+        <a class="button" id="n_contact" href="#contact"><span>Contact</span></a>
       </div>
     </div>
-    <div class="content" id="content"></div>
+    <div class="content" id="content">
+      <div id="about" class="section white"></div>
+      <div id="coding" class="section green"></div>
+      <div id="writing" class="section white"></div>
+      <div id="contact" class="section green"></div>
+    </div>
   </body>
+  <script type="text/javascript" src="js/jquery.js"></script>
   <script src="js/react.js"></script>
   <script src="js/react-dom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>

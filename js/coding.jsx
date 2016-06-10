@@ -27,11 +27,10 @@ var Coding = React.createClass({
     )
   }
 });
-
-document.getElementById("coding").onclick = function(){
+var coding = function() {
   ReactDOM.render(
     <Coding />,
-    document.getElementById("content")
+    document.getElementById("coding")
   );
-  changeActive('coding');
 }
+coding();
