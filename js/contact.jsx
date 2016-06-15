@@ -1,20 +1,28 @@
-var Contact = React.createClass({
-  render: function() {
-    return (
-      <div>
-        <h1>LinkedIn</h1>
-        <h2><a href="https://www.linkedin.com/in/andrew-hartnett-6482b89a" class="contact">/in/andrew-hartnett-6482b89a</a></h2>
-        <h1>GitHub</h1>
-        <h2><a href="https://github.com/arussoh" class="contact">/arussoh</a></h2>
-      </div>
-    )
-  }
-});
+import React from 'react';
+import Link from './link.jsx';
 
-var contact = function() {
-  ReactDOM.render(
-    <Contact />,
-    document.getElementById("contact")
-  );
-}
-contact();
+class Contact extends React.Component {
+  render() {
+    return (
+      <div className='content-block' style={{paddingBottom: '30px'}}>
+        <h1>Contact</h1>
+        <div className='card-cont'>
+          <Link large='true'
+                bgimgSrc="../img/linkedin.png"
+                language="/arhartnett"
+                link="www.linkedin.com/in/arhartnett" />
+          <Link large='true'
+                bgimgSrc="../img/github.png"
+                language="/arussoh"
+                link="https://github.com/arussoh" />
+          <Link large='true'
+                bgimgSrc="../img/twitter.png"
+                language="@andrew hartnett"
+                link="https://twitter.com/AndrewHartnett" />
+        </div>
+      </div>
+    );
+  }
+};
+
+export default Contact;

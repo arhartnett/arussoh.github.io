@@ -1,0 +1,31 @@
+{
+  "name": "arussoh.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "dependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "browserify": "^13.0.1",
+    "classnames": "^2.2.5",
+    "jquery": "^3.0.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arussoh/arussoh.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arussoh/arussoh.github.io/issues"
+  },
+  "homepage": "https://github.com/arussoh/arussoh.github.io#readme"
+}

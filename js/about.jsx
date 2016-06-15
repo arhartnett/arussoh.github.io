@@ -1,50 +1,37 @@
-var About = React.createClass({
-  render: function() {
+import React from 'react';
+import Blurb from './blurb.jsx';
+
+class About extends React.Component {
+  render() {
     return (
-      <div>
-        <h1>Education</h1>
-          <h2>
-            <a href="http://www.princeton.edu" class="about">
-              Princeton University
-            </a>
-            <br />
-            <small>2014-2018</small>
-          </h2>
+      <div className="content-block">
+        <div className='message big'>
           <p>
-            I'm a rising Junior in the <a href="http://wws.princeton.edu/">Woodrow Wilson School of Public and International Affairs</a>. My concentration is in environmental policy. I am also persuing certificates in Applications of Computing and Creative Writing.
+            <img className='right' src='../img/headshot_sq.png'></img>
+            Hi, I'm Andrew. I grew up on a farm in upstate New York, and I currently work at a startup in the big city. I love theater, cycling, and American history.
           </p>
-          <h3>Activities</h3>
-            <p>
-              I'm a writer for the <a href="http://www.triangleshow.com/">Princeton Triangle Club</a>, a 125 year tradition of musical sketch comedy.
-            </p>
-            <p>
-              I compete with the <em><a href="https://debate.princeton.edu/">Princeton Debate Panel</a></em>, and served as director of our annual, 1,000+ participant high school debate tournament.
-            </p>
-            <h2>
-              <a href="http://www.crcs.k12.ny.us" class="about">Cobleskill-Richmondville HS</a><br />
-              <small>2010-2014</small>
-            </h2>
-              <p>
-                I graduated CRHS as the Salutatorian of the Class of 2014. I spent my four years there as the concert master of the symphonic orchestra and the leader of the band's percussion section. I was on an <a href="http://odysseyofthemind.com/" class="about">Odyssey of the Mind</a> team which won third place at the New York State finals. I was also a member of the varsity cross country and track & field teams.
-              </p>
-          <h1>Work</h1>
-            <h2>
-              <a href="http://www.howecaverns.com" class="about">Howe Caverns</a><br />
-              <small>2011-2015</small>
-            </h2>
-            <p>
-              I was hired as a tour guide at the busiest tourist attraction in my home town. I was soon promoted to the position of "boatman" (named after the underground boat ride which every tour features), where I was responsible for managing tours. In my last year I worked in the ticket office, where I scheduled the tours and handled customer service issues.
-            </p>
+        </div>
+        <h2>School</h2>
+        <Blurb name="Princeton University"
+               years="Class of 2018"
+               imgSrc="../img/princeton.png">
+          <p>
+            I'm a rising junior concentrating in the Woodrow Wilson School of Public and International Affairs. I'm also getting certificates in Computer Science and Creative Writing.
+          </p>
+          <p>
+            Outside of class, I write for the Princeton Triangle Club, a musical and sketch comedy group. I'm a member of the Princeton Debate Panel, and was director of our high school debate tournament. I also give tours for the admissions office.
+          </p>
+        </Blurb>
+        <Blurb name="Cobleskill Richmondville"
+               years="Class of 2014"
+               imgSrc="../img/cr.png">
+          <p>
+            In high school I was the concert master of the symphonic orchestra (on the violin) and also played drums in the band. I competed in Odyssey of the Mind for 9 years, leading up to my team's third place finish at the New York State finals my senior year. I also ran cross country and track and field. I spent my summers as a tour guide at Howe Caverns.
+          </p>
+        </Blurb>
       </div>
     );
   }
-});
+};
 
-var about = function() {
-  ReactDOM.render(
-    <About />,
-    document.getElementById('about')
-  );
-  changeActive('about')
-}
-about();
+export default About;
